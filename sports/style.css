@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+a{text-decoration: none!important;}
+
+.header{height: 100%;
+margin-bottom: 50px;}
+
+.carousel-inner img{
+	height: 90vh;
+}
+@media (max-width: 768px){
+  .carousel-inner img{
+    height: 55vh!important;
+  }
+}
+
+#sports{
+	height: 100%;
+	background: #0a3d62;
+}
+
+.cardheader{
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+  	height: 11rem;
+    position: relative;
+    background: transparent;
+	overflow: hidden;
+}
+.cardheader img{
+  transition: 1s all;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  /* border-radius:5px 5px 0 0; */
+}
+.caption{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.4);
+  color: rgb(122, 113, 113);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transition: 1s all;
+}
+.caption h2{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.caption a{
+	text-decoration: none!important;
+	font-weight:bold;
+	border: 1px solid white;
+	padding: 2px 18px;
+	border-radius: 100px;
+	color: white;
+	transition: .5s all;
+}
+.caption a:hover{
+	color: #ffffff!important;
+	text-decoration: none!important;
+	background-color:#e84393!important ;
+	border: 1px solid #e84393;
+}
+.cardheader:hover img{
+  transform: scale(1.4);
+}
+.cardheader:hover .caption{
+  opacity: 1;
+}
+
+.carousel-indicators li{
+  width: 15px!important;
+  height: 15px!important;
+  border-radius: 50%!important;
+  margin: 0 8px!important;
+  background-color: #0984e3!important;
+}
+
+.col .card-body{
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border: 2px solid;
+	border-color:#8D8D8D;
+	border-top-color: transparent;
+	border-opacity:.6;
+}
+#footer{
+  background: #0a183d;
+  height: 33vh;
+}
+#footer a{color: grey;}
+#footer a:hover{color: white;text-decoration: none; transition: 0.2s ease;}
+
+@media (max-width: 768px){
+	#footer{
+		height: 78vh;
+	}
+}
